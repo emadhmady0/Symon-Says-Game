@@ -46,3 +46,10 @@ function startNewLevel(){
     const simon_press = Math.floor(Math.random() * (4 - 1 + 1) ) + 1
     addSimonClickToArray(simon_array,simon_press)
 }
+
+body.addEventListener("keydown",()=> {
+    if (gameStarted == false) {
+        gameStarted = true
+        startNewLevel()
+    }
+})
