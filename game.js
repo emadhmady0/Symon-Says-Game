@@ -40,3 +40,9 @@ function addSimonClickToArray(s_array,number){
         clickAnimation(blue,"./sounds/blue.mp3")
     }
 }
+
+function startNewLevel(){
+    level_title.textContent = `level ${level}`
+    const simon_press = Math.floor(Math.random() * (4 - 1 + 1) ) + 1
+    addSimonClickToArray(simon_array,simon_press)
+}
