@@ -22,7 +22,6 @@ function clickAnimation(color,audio){
     sound.play()
 }
 
-
 function addSimonClickToArray(s_array,number){
     if(number == 1){
         s_array.push("green")
@@ -41,19 +40,3 @@ function addSimonClickToArray(s_array,number){
         clickAnimation(blue,"./sounds/blue.mp3")
     }
 }
-
-
-function startNewLevel(){
-    level_title.textContent = `level ${level}`
-    const simon_press = Math.floor(Math.random() * (4 - 1 + 1) ) + 1
-    addSimonClickToArray(simon_array,simon_press)
-}
-body.addEventListener("keydown",()=> {
-    body.classList.add("game-over")
-    clickAnimation(blue,"./sounds/wrong.mp3")
-    // if (gameStarted == false) {
-    //     gameStarted = true
-    //     startNewLevel()
-    // }
-  
-})
