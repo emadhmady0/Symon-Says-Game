@@ -29,6 +29,7 @@ function turnBackgroundToRed(){
     },500)
 }
 
+// This function adds 1 color at a time for simon array 
 function addSimonClickToArray(s_array,number){
     if(number == 1){
         s_array.push("green")
