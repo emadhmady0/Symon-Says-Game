@@ -13,6 +13,7 @@ let level = 1;
 let gameStarted = false;
 let user_clicks_counter = 0
 
+// apllies the button press styling then removes it after 0.5sec
 function clickAnimation(color,audio){
     color.classList.add("pressed")
     setTimeout(function(){
@@ -29,7 +30,7 @@ function turnBackgroundToRed(){
     },500)
 }
 
-// This function adds 1 color at a time for simon array 
+// This function adds 1 color at a time to simon array 
 function addSimonClickToArray(s_array,number){
     if(number == 1){
         s_array.push("green")
